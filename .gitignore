@@ -1,0 +1,11 @@
+.ipynb_checkpoints
+.env
+chroma_langchain_db
+.DS_Store
+2022-annual-report-reformatted.txt
+2023-annual-report-reformatted.txt
+2022-annual-report.txt
+2023-annual-report.txt
+*.pdf
+GenAI/__pycache__
+RAG/__pycache__

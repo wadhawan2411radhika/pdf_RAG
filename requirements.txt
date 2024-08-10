@@ -1,0 +1,8 @@
+pandas
+PyPDF2
+python-dotenv
+langchain_chroma
+chromadb
+langchain_huggingface
+sentence_transformers
+pyyaml

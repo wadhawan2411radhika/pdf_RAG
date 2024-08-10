@@ -1,0 +1,34 @@
+strength_query : >-2
+  What are the strength of the organisation
+
+strength_prompt : >-2
+  Based on this info. Generate your analysis
+  Context : {context}
+
+weakness_query : >-2
+  What are the weakness of the organisation
+
+weakness_prompt : >-2
+  Based on this info. Generate your analysis
+  Context : {context}
+
+opportunity_query : >-2
+  What are the opportunity of the organisation
+
+opportunity_prompt : >-2
+  Based on this info. Generate your analysis
+  Context : {context}
+
+threat_query : >-2
+  What are the threats of the organisation
+
+threat_prompt : >-2
+  Based on this info. Generate your analysis
+  Context : {context}
+
+summary_prompt : >-2
+  Conclude this : 
+  Strength : {strength}
+  Weakness : {weakness}
+  Opportunity : {opportunity}
+  Threat : {threat}
