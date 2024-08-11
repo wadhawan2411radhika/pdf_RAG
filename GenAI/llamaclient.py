@@ -23,7 +23,7 @@ class LlamaClient:
                 {"role": "user", "content": prompt}
             ],
             max_tokens=1000,
-            temperature=0.7
+            temperature=0.1
         )
 
         # Return the generated response
