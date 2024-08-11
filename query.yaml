@@ -1,34 +1,68 @@
 strength_query : >-2
-  What are the strength of the organisation
+  What are the key achievements and advantages? How did CBA perform better than its competitors? 
+  Which areas of CBA's operations were particularly strong ?
+  Look for sections discussing revenue growth, market share, profit, successful product launches, customer satisfaction, and innovation.
 
 strength_prompt : >-2
-  Based on this info. Generate your analysis
+  You are a marketing research analyst.
+  Based on the provided information, summarize the key strengths of CBA. 
+  Focus on areas where the company has shown exceptional performance, competitive advantages, or any other factors that positively contribute to the company's success.
+
   Context : {context}
 
 weakness_query : >-2
+  What challenges or shortcomings were there? Area of underperformance?
+  What were the significant internal or operational issues?
+  Target sections highlighting declines in revenue, customer complaints, operational inefficiencies, or failed initiatives.
   What are the weakness of the organisation
 
 weakness_prompt : >-2
-  Based on this info. Generate your analysis
+  You are a marketing research analyst.
+  Considering the provided context, summarize the main weaknesses of CBA. 
+  Identify areas where the company has faced challenges, underperformed, or encountered internal issues that have negatively impacted its operations.
   Context : {context}
 
 opportunity_query : >-2
-  What are the opportunity of the organisation
+  What potential market opportunities were identified?
+  Which emerging trends or markets could benefit in the future?
+  What strategic initiatives could be capitalized based on report?
+  Focus on discussions around new markets, technological advancements, industry trends, or strategic partnerships.
 
 opportunity_prompt : >-2
-  Based on this info. Generate your analysis
+  You are a marketing research analyst.
+  Based on the context, summarize the potential opportunities available to CBA. 
+  Discuss emerging trends, market potentials, or strategic initiatives that the company can leverage for future growth and success.
   Context : {context}
 
 threat_query : >-2
-  What are the threats of the organisation
+  What external risks or threats could negatively impact ?
+  What are the major competitive pressures faced?"
+  Which regulatory or market challenges were highlighted in report?"
+  Examine content discussing competitive analysis, regulatory changes, economic downturns, or potential market disruptions.
 
 threat_prompt : >-2
-  Based on this info. Generate your analysis
+  You are a marketing research analyst.
+  Given the context, summarize the significant threats faced by CBA. 
+  Focus on external risks, competitive pressures, regulatory challenges, or any other factors that could negatively affect the company's future prospects.
   Context : {context}
 
 summary_prompt : >-2
-  Conclude this : 
-  Strength : {strength}
-  Weakness : {weakness}
-  Opportunity : {opportunity}
-  Threat : {threat}
+  You are a marketing research analyst.
+  Given the SWOT analyses for CBA in 2022 and 2023, summarize and contrast the key Strengths, Weaknesses, Opportunities, and Threats observed over these two years. 
+  Highlight the major changes in each category, including any new strengths or weaknesses that have emerged, shifts in opportunities, and the evolution of external threats. 
+  Discuss how CBA's strategic position has evolved, considering both internal and external factors.
+
+  Year 2022 : 
+  Strength : {strength_2022}
+  Weakness : {weakness_2022}
+  Opportunity : {opportunity_2022}
+  Threat : {threat_2022}
+
+  Year 2023 : 
+  Strength : {strength_2023}
+  Weakness : {weakness_2023}
+  Opportunity : {opportunity_2023}
+  Threat : {threat_2023}
+
+  Please generate SWOT analysis at the organisation level. This report will be consumed by investors.
+  Output should be in markdown file.
