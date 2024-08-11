@@ -9,3 +9,4 @@ chroma_langchain_db
 *.pdf
 GenAI/__pycache__
 RAG/__pycache__
+research.md
