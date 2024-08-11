@@ -21,7 +21,7 @@ def create_documents_from_text(text):
 def chunk_documents(input_path):
     text_content = load_text_file(input_path)
     docs = create_documents_from_text(text_content)
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=3000, chunk_overlap=200)
     splits = text_splitter.split_documents(docs)
     return splits    
      
@@ -52,8 +52,7 @@ def save_docs2json(results, filename):
 def save_docs(results, year):
     file_names = ['strength_results.json', 'weakness_results.json', 'opportunity_results.json', 'threat_results.json']
     for result, file_name in zip(results, file_names):
-        save_docs2json(result, os.path.join("result",file_name, f'_{year}'))
-
+        save_docs2json(result, os.path.join("results", f'{year}_{file_name}'))
 
 def main():
     settings_22 = config['setting_2022']
